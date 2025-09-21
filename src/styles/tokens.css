@@ -1,0 +1,14 @@
+:root{
+  --bg: #0b0c0f;          /* background */
+  --panel: #12141a;
+  --text: #e8eaed;        /* primary text */
+  --muted: #a0a7b4;       /* secondary text */
+  --line: #242833;        /* subtle borders */
+  --accent: #6ee7f5;      /* change to your accent later */
+  --radius: 16px;
+  --s1: 8px; --s2: 12px; --s3: 16px; --s4: 24px; --s5: 32px; --s6: 48px;
+  --maxw: 1080px;
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#ffffff; --panel:#f8f9fb; --text:#0b0c0f; --muted:#5b6370; --line:#E6E8EF; }
+}
