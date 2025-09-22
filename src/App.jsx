@@ -91,9 +91,9 @@ const projects = [
 
 
 const skills = {
-  "Languages": ["Python","Go","Shell Script"],
-  "ML/DS": ["PyTorch","TensorFlow","Numpy","Pandas"],
-  "Systems": ["Kubernetes","VMware vSphere","NSX-T"]
+  "Languages": ["Python","Go","Rust","C++","Shell Script"],
+  "ML/DS": ["PyTorch","TensorFlow","Numpy","Pandas","ScikitLearn"],
+  "Systems": ["Kubernetes","Docker","VMware vSphere","NSX-T"]
 }
 // ---------------------------------------------------
 
@@ -184,10 +184,17 @@ const Hero = ()=>(
             <a href="https://www.linkedin.com/in/yadunandan-ramanna" target="_blank" rel="noreferrer"><Linkedin size={18}/></a>
           </div>
         </div>
-        <div>
+        {/* <div>
           <div className="card" style={{height:220}}>
             <p style={{color:'var(--muted)'}}>Drop a headshot or graphic here later.</p>
           </div>
+        </div> */}
+        <div className="hero-right">
+            <img
+              className="hero-photo"
+              src="/picture.jpg"
+              alt="Headshot of Yadunandan Ramanna"
+            />
         </div>
       </div>
     </div>
@@ -261,7 +268,7 @@ const Projects = ()=>{
 const Resume = ()=>(
   <Section id="resume" title="Resume">
     <div className="card">
-      <p>Your resume PDF goes here (replace <code>/public/resume.pdf</code>).</p>
+      {/* <p>My resume (replace <code>/public/resume.pdf</code>).</p> */}
       <a className="button" href="/resume.pdf" target="_blank"><FileDown size={16}/> View / Download</a>
     </div>
   </Section>
@@ -271,7 +278,7 @@ const Contact = ()=>(
   <Section id="contact" title="Contact">
     <div className="card">
       <p style={{color:'var(--muted)'}}>Reach out directly via email.</p>
-      <a className="button primary" href="mailto:you@example.com"><Mail size={16}/> Email me</a>
+      <a className="button primary" href="mailto:ramannayadunandan@gmail.com"><Mail size={16}/> Email me</a>
     </div>
   </Section>
 )
